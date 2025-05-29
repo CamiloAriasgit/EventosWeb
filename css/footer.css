@@ -1,0 +1,40 @@
+.main-footer {
+    background-color: var(--primary-bg-color); /* Sigue siendo el negro principal */
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 50px 20px; /* Más padding para una sensación más robusta */
+    font-size: 0.95em; /* Un poco más grande */
+    border-top: 1px solid var(--border-subtle);
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    color: var(--text-color-light);
+    line-height: 1.6;
+}
+
+/* No hay links en el footer por ahora, pero se mantiene la estructura por si se añaden */
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: var(--text-color-light);
+    margin: 0 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive para el footer */
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 30px 15px;
+    }
+    .footer-content p {
+        font-size: 0.9em;
+    }
+}
