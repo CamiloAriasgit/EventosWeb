@@ -1,16 +1,15 @@
 ---
 import Header from "../components/Header";
 import SectionCard from "../components/SectionCard";
+import Town from "../components/Town";
+import Footer from "../components/Footer";
 import App from "../components/App"; // Ajusta la ruta a tu App.tsx
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
-import Footer from "../components/Footer";
-import VillaFeaturesSection from "@/components/VillaFeaturesSection";
 ---
 
 <Layout>
-    <VillaFeaturesSection/>
     <Header currentPath="/" client:load />
-    <App client:load />
+    <Town client:load/>
     <Footer/>
 </Layout>
