@@ -1,0 +1,143 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;700&display=swap');
+
+/* Variables CSS */
+:root {
+    --primary-bg-color: #000000; /* Negro muy oscuro, casi grafito */
+    --secondary-bg-color: #010101; /* Un gris muy oscuro para seccionar */
+    --text-color-light: #ecf0f9;     /* Blanco puro para texto sobre fondos oscuros */
+    --text-color-dark: #ecf0f9;     /* Gris claro para texto secundario si se necesitara sobre fondos claros */
+    --accent-color: #fafafa;   /* Turquesa vibrante para acentos */
+    --border-subtle: rgba(255, 255, 255, 0.1); /* Líneas divisorias sutiles */
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Montserrat para el cuerpo */
+    line-height: 1.7; /* Mayor interlineado para mejor legibilidad */
+    color: var(--text-color-light);
+    background-color: var(--primary-bg-color);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Playfair Display para títulos */
+    color: var(--text-color-light);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.8em; /* Un poco más grande */
+    line-height: 1.1;
+    color: var(--text-color-light);
+}
+
+h2 {
+    font-size: 2.8em; /* Un poco más grande */
+    line-height: 1.2;
+    margin-bottom: 40px;
+    color: var(--text-color-light);
+}
+
+p {
+    margin-bottom: 1.2em; /* Más espacio entre párrafos */
+}
+
+a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 32px; /* Ligeramente más grande */
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    border: 2px solid transparent;
+    font-size: 1.1em; /* Un poco más grande */
+}
+
+.primary-btn {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    border-color: var(--accent-color);
+}
+
+.primary-btn:hover {
+    background-color: #ecf0f9; /* Turquesa ligeramente más oscuro */
+    border-color: #ecf0f9;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+}
+
+/* Utilitarios */
+.subtitle {
+    font-size: 1.4em; /* Un poco más grande */
+    text-align: center;
+    margin-bottom: 40px; /* Más espacio */
+    color: var(--text-color-light);
+    font-weight: 300; /* Más ligero para sutileza */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.4em;
+    }
+    .btn {
+        padding: 14px 28px;
+        font-size: 1em;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    .subtitle {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+}

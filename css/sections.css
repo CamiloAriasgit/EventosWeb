@@ -1,0 +1,189 @@
+/* Hero Section */
+.hero-section {
+    background: url('https://rare-gallery.com/uploads/posts/1112713-sunset-sea-city-cityscape-Hong-Kong-skyline-skyscraper-evening-tower-harbor-horizon-dusk-industrial-power-plant-port-industry.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Overlay ligeramente más oscuro para mayor contraste del texto */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 950px; /* Más ancho para el texto principal */
+    padding: 20px;
+}
+
+.hero-content h1 {
+    color: var(--text-color-light);
+    margin-bottom: 30px; /* Más espacio */
+    font-size: 4.2em; /* Título hero más grande */
+}
+
+.hero-content p {
+    font-size: 1.5em; /* Texto hero más grande */
+    margin-bottom: 60px; /* Más espacio antes del botón */
+    color: var(--text-color-light);
+    font-weight: 300;
+}
+
+/* General Section Styling */
+.section {
+    padding: 120px 0; /* Más padding para una sensación de amplitud */
+    text-align: center;
+    background-color: var(--primary-bg-color); /* Fondo principal */
+}
+
+.owners-section, .investors-section {
+    background-color: var(--secondary-bg-color); /* Usar el gris muy oscuro para estas secciones */
+    border-bottom: 1px solid var(--border-subtle);
+    border-top: 1px solid var(--border-subtle);
+}
+
+.section h2 {
+    color: var(--text-color-light);
+    position: relative;
+    padding-bottom: 25px; /* Más espacio para la línea */
+    margin-bottom: 70px; /* Más espacio después del título */
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100px; /* Línea más larga */
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+.section p {
+    font-size: 1.15em; /* Texto un poco más grande */
+    line-height: 1.8;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color-light);
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px auto; /* Más espacio para la lista */
+    max-width: 850px; /* Más ancho para las listas */
+    text-align: left;
+    color: var(--text-color-light);
+}
+
+.section ul li {
+    background-color: rgba(255, 255, 255, 0.07); /* Fondo un poco más visible para items de lista */
+    margin-bottom: 25px; /* Más espacio entre ítems */
+    padding: 22px 30px; /* Más padding */
+    border-left: 6px solid var(--accent-color); /* Borde de acento más grueso */
+    border-radius: 4px;
+    font-size: 1.2em; /* Texto de lista más grande */
+    line-height: 1.7;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sutil sombra */
+}
+
+.section ul li strong {
+    color: var(--text-color-light);
+    font-weight: 700;
+}
+
+/* Contact Section */
+.contact-section {
+    padding-bottom: 150px; /* Más padding para el CTA final */
+    background-color: var(--primary-bg-color); /* Asegura el fondo negro principal */
+}
+
+.contact-section p {
+    margin-bottom: 50px;
+}
+
+.contact-btn {
+    font-size: 1.3em; /* Botón aún más grande */
+    padding: 20px 45px;
+}
+
+/* Responsive para secciones */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 3.5em;
+    }
+    .hero-content p {
+        font-size: 1.3em;
+    }
+    .section h2 {
+        font-size: 2.5em;
+    }
+    .section p {
+        font-size: 1.05em;
+    }
+    .section ul li {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 90px 0;
+    }
+    .hero-content h1 {
+        font-size: 2.8em;
+    }
+    .hero-content p {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+    }
+    .section h2 {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+    .section ul {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+    .section ul li {
+        font-size: 1em;
+        padding: 18px 25px;
+    }
+    .contact-btn {
+        font-size: 1.1em;
+        padding: 16px 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+    .section {
+        padding: 70px 0;
+    }
+    .section h2 {
+        font-size: 1.8em;
+    }
+    .section ul li {
+        font-size: 0.95em;
+        padding: 15px 20px;
+    }
+}
