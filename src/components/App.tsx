@@ -10,7 +10,6 @@ const App: React.FC = () => {
                     <h1>¡Encuentra el lugar que tu <span className='text-emerald-500 font-bold'>evento</span> merece!</h1>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-                    {/* Todas las cartas ahora tienen la misma estructura de diseño */}
                     <Carta
                         titulo="Mansión Lujosa"
                         description="Tu celebración merece una experiencia de lujo."
