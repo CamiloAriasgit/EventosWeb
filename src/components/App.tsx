@@ -5,7 +5,7 @@ import Carta from './Carta';
 const App: React.FC = () => {
     return (
         <div className="bg-black py-20 font-sans">
-            <div className="container mx-auto px-5">
+            <div className="container mx-auto px-3">
                 <div className='text-center mb-8 text-white text-2xl font-semibold'>
                     <h1>¡Encuentra el lugar que tu <span className='text-emerald-500 font-bold'>evento</span> merece!</h1>
                 </div>

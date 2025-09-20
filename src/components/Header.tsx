@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ currentPath }) => {
 
   return (
     <header className="bg-black fixed top-0 left-0 right-0 z-50 shadow-lg font-sans">
-      <nav className="container mx-auto px-6 py-1 flex justify-between items-center" role="navigation" aria-label="Navegación Principal">
+      <nav className="container mx-auto px-3 py-1 flex justify-between items-center" role="navigation" aria-label="Navegación Principal">
         {/* Logo o Nombre de la Marca */}
         <a href="/" className="text-2xl font-extrabold text-transparent bg-clip-text bg-emerald-500 tracking-wider transition-transform transform hover:scale-105 duration-300">
           <span className=''>EVENT</span><span className='text-white'>IN</span>

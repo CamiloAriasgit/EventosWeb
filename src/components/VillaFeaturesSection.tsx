@@ -8,7 +8,7 @@ import CategoryButton from './CategoryButton';
 const VillaFeaturesSection: React.FC = () => {
     return (
         <div className="bg-black pt-14 font-sans">
-            <div className="container mx-auto px-6 lg:px-8">
+            <div className="container mx-auto px-3 lg:px-">
                 {/* Títulos principales */}
                 <h2 className="text-center text-xl font-semibold text-emerald-500">
                     ¡Arma tu evento sin límites!
@@ -25,11 +25,13 @@ const VillaFeaturesSection: React.FC = () => {
                             title="Antioquia en eventos."
                             description={
                                 <>
-                                    Este también es tu espacio, publica tu inmueble/establecimiento y haz parte de nuestra comunidad o publica tu evento para que más personas se unan haciendo uso de nuestras interfaces de publicidad.
+                                    Este también es tu espacio, ¡Utilízalo con confianza!
                                     <br /><br />
                                     ✔ ¿Tienes que celebrar un cumpleaños, una boda, un evento empresarial o una reunión social? ¡Estás en el sitio web indicado!
                                     <br /><br />
-                                    ✔ ¿Tienes un inmueble o espacio sin usar y sin generar ingresos? ¡Esta es tu oportunidad para <a href="/register" className="text-emerald-500 hover:underline">registrarse</a>!
+                                    ✔ ¿Eres una entidad logística que arma eventos? ¡Encuentra el espacio que buscas en nuestras categorías!
+                                    <br /><br />
+                                    ✔ ¿Tienes un inmueble o espacio sin usar y sin generar ingresos? ¡Esta es tu oportunidad para <a href="/register" className="text-emerald-500 hover:underline">registrarte</a>!
                                 </>
                             }
                             icon="https://assets.entrepreneur.com/content/3x2/2000/1701107803-latin-america-business-expansion-1123-g1171615860.jpg"
