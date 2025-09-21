@@ -24,7 +24,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon, siz
             <img src={icon} alt="" className="h-10 w-10 text-white" />
           </div>
         )}
-        <h3 className="text-xl font-bold">{title}</h3>
+        <h3 className="text-xl font-normal">{title}</h3>
         {/* Renderiza la descripción */}
         <p className="mt-2 text-neutral-400 text-sm">{description}</p>
         

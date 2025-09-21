@@ -19,12 +19,12 @@ const VillaFeaturesSection: React.FC = () => {
                 <div className="mt-10 grid gap-4 lg:grid-cols-2 lg:grid-rows-2">
                     <div className="relative lg:row-span-2">
                         <FeatureCard
-                            title="Antioquia en eventos."
+                            title="Espacios para eventos en Antioquia."
                             description={
                                 <>
                                     Este también es tu espacio, ¡Utilízalo con confianza!
                                     <br /><br />
-                                    ✔ ¿Tienes que celebrar un cumpleaños, una boda, un evento empresarial o una reunión social? ¡Estás en el sitio web indicado!
+                                    <span className='text-emerald-500'>✔</span> ¿Tienes que celebrar un cumpleaños, una boda, un evento empresarial o una reunión social? ¡Estás en el sitio web indicado!
                                     <br /><br />
                                     ✔ ¿Eres una entidad logística que arma eventos? ¡Encuentra el espacio que buscas en nuestras categorías!
                                     <br /><br />
@@ -41,12 +41,14 @@ const VillaFeaturesSection: React.FC = () => {
                         description="Encuentra el espacio que tu evento privado se merece en nuestra gama de categorías."
                         icon="https://www.valenzhealth.com/wp-content/uploads/2020/10/Professional-800x800-L.png"
                     >
-                        <CategoryButton text="Villas" linkHref="/villas" />
-                        <CategoryButton text="Salones de conferencias" linkHref="/salones" />
-                        <CategoryButton text="Mansiones" linkHref="/mansiones" />
-                        <CategoryButton text="Coliseos" linkHref="/coliseos" />
-                        <CategoryButton text="Hoteles" linkHref="/hoteles" />
-                        <CategoryButton text="Restaurantes" linkHref="/restaurantes" />
+                        <CategoryButton text="Villas y Fincas" linkHref="/espacios/villas-fincas" />
+                        <CategoryButton text="Salones de Eventos" linkHref="/espacios/salones-eventos" />
+                        <CategoryButton text="Hoteles y Resorts" linkHref="/espacios/hoteles-resorts" />
+                        <CategoryButton text="Restaurantes y Bares" linkHref="/espacios/restaurantes-bares" />
+                        <CategoryButton text="Mansiones y Casas de Lujo" linkHref="/espacios/mansiones-lujo" />
+                        <CategoryButton text="Espacios Corporativos" linkHref="/espacios/corporativos" />
+                        <CategoryButton text="Lugares para Espectáculos" linkHref="/espacios/espectaculos" />
+                        <CategoryButton text="Espacios al Aire Libre" linkHref="/espacios/aire-libre" />
                     </FeatureCard>
 
                     <FeatureCard
@@ -54,12 +56,12 @@ const VillaFeaturesSection: React.FC = () => {
                         description="Explora y únete a eventos disponibles en los espacios que nuestros establecimientos ofrecen."
                         icon="https://www.greanpipe.com/wp-content/uploads/2019/11/dealer-768x707.png"
                     >
-                        <EventoPublico text="Conciertos" linkHref="/eventos/conciertos" />
+                        <EventoPublico text="Eventos Sociales" linkHref="/eventos/sociales" />
+                        <EventoPublico text="Eventos Corporativos" linkHref="/eventos/corporativos" />
+                        <EventoPublico text="Eventos Culturales" linkHref="/eventos/culturales" />
+                        <EventoPublico text="Eventos Académicos" linkHref="/eventos/academicos" />
                         <EventoPublico text="Fiestas" linkHref="/eventos/fiestas" />
-                        <EventoPublico text="Teatros" linkHref="/eventos/Teatros" />
-                        <EventoPublico text="Eventos Empresariales" linkHref="/eventos/empresariales" />
-                        <EventoPublico text="Eventos culturales" linkHref="/eventos/culturales" />
-                        <EventoPublico text='Campañas' linkHref="/eventos/Campañas" />
+                        <EventoPublico text="Bodas" linkHref="/eventos/bodas" />
                     </FeatureCard>
                 </div>
             </div>

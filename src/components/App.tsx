@@ -7,7 +7,7 @@ const App: React.FC = () => {
         <div className="bg-black py-20 font-sans">
             <div className="container mx-auto px-3">
                 <div className='text-center mb-8 text-white text-2xl font-semibold'>
-                    <h1>¡Encuentra el lugar que tu <span className='text-emerald-500 font-bold'>evento</span> merece!</h1>
+                    <h1>¡Encuentra el lugar que tu <span className='text-emerald-500 font-semibold'>evento</span> merece!</h1>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                     <Carta

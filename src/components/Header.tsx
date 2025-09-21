@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ currentPath }) => {
             <li key={link.name}>
               <a
                 href={link.href}
-                className={`text-lg transition-colors duration-300 relative group
+                className={`text-base transition-colors duration-300 relative group
                   ${currentPath === link.href ? 'text-emerald-500' : 'text-neutral-400 hover:text-neutral-300'}`
                 }
               >
@@ -71,7 +71,7 @@ const Header: React.FC<HeaderProps> = ({ currentPath }) => {
             <li key={link.name}>
               <a
                 href={link.href}
-                className={`text-xl transition-colors duration-200 block w-full text-center
+                className={`text-lg transition-colors duration-200 block w-full text-center
                   ${currentPath === link.href ? 'text-emerald-500' : 'text-neutral-400 hover:text-white'}`}
               >
                 {link.name}
