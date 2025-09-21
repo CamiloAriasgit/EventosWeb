@@ -26,9 +26,9 @@ const VillaFeaturesSection: React.FC = () => {
                                     <br /><br />
                                     <span className='text-emerald-500'>✔</span> ¿Tienes que celebrar un cumpleaños, una boda, un evento empresarial o una reunión social? ¡Estás en el sitio web indicado!
                                     <br /><br />
-                                    ✔ ¿Eres una entidad logística que arma eventos? ¡Encuentra el espacio que buscas en nuestras categorías!
+                                    <span className='text-emerald-500'>✔</span> ¿Eres una entidad logística que arma eventos? ¡Encuentra el espacio que buscas en nuestras categorías!
                                     <br /><br />
-                                    ✔ ¿Tienes un inmueble o espacio sin usar y sin generar ingresos? ¡Esta es tu oportunidad para <a href="/register" className="text-emerald-500 hover:underline">registrarte</a>!
+                                    <span className='text-emerald-500'>✔</span> ¿Tienes un inmueble o espacio sin usar y sin generar ingresos? ¡Esta es tu oportunidad para <a href="/register" className="text-emerald-500 hover:underline">registrarte</a>!
                                 </>
                             }
                             icon="https://assets.entrepreneur.com/content/3x2/2000/1701107803-latin-america-business-expansion-1123-g1171615860.jpg"
